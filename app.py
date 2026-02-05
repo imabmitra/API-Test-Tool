@@ -25,7 +25,7 @@ with col2:
 with col3:
     st.write("") # Spacer
     st.write("") # Spacer
-    send_button = st.button("Send Request", type="primary", use_container_width=True)
+    send_button = st.button("Send Request", type="primary", width="stretch")
 
 # --- Request Details ---
 st.write("### Request Details")
@@ -49,7 +49,7 @@ with tab_params:
             "value": st.column_config.TextColumn("Value")
         },
         key="params_editor",
-        use_container_width=True
+        width="stretch"
     )
 
 with tab_headers:
@@ -63,7 +63,7 @@ with tab_headers:
             "value": st.column_config.TextColumn("Value")
         },
         key="headers_editor",
-        use_container_width=True
+        width="stretch"
     )
 
 with tab_body:
@@ -86,7 +86,7 @@ with tab_body:
                 "value": st.column_config.TextColumn("Value")
             },
             key="form_body_editor",
-            use_container_width=True
+            width="stretch"
         )
 
 # --- Logic ---
